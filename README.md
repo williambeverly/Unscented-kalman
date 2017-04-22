@@ -21,7 +21,7 @@ The user may enter the following commands in cmd to build, in Windows:
 * Response: Code compiles without error.
 
 ### Accuracy
-The following table shows the RMSE requirements and results for "obj_pose-laser-radar-synthetic-input.txt". Out of interest, data was also collected for only LIDAR and only RADAR sensors, by setting flags (use_laser_, use_radar_ lines 16, 19) in the ukp source file, which has to be done manually. 
+The following table shows the RMSE requirements and results for "obj_pose-laser-radar-synthetic-input.txt". Out of interest, data was also collected for only LIDAR and only RADAR sensors, by setting flags (use_laser_, use_radar_ lines 16, 19) in the ukp source file, which has to be done manually. The results for Lidar+Radar are below the requirements, and the velocity is more accurate than the extended kalman filter in P1, due to the use of the CTRV model instead of CV model, and improved non-linear capability of UKF.
 
 | Requirements (<=) | L + R |  L only | R only |
 | ------------- | ------------- | ------------- | ------------- |
